@@ -1,9 +1,9 @@
-# AI Champions
+# Yale AI Champions
 
-**AI Champions Training: Claude Code for Engineering Teams**
+**Yale AI Champions Training: Claude Code for Engineering Teams**
 *Governance, Hooks, Plugins, and Secure Environments*. Two days, ROI Training.
 
-Six labs. Everything runs on your own Linux class machine with your own Claude Code sign-in. No lab needs access to an organization, an administrator console, or a shared account, and every score comes from a script you run locally.
+Welcome to the repo! Everything runs on your own Linux class machine (RVC, provided by ROI) with your own Claude Code sign-in (provided by ROI). No lab needs access to an organization, an administrator console, or a shared account, and every score comes from a script you run locally.
 
 ## Contents
 
@@ -17,11 +17,11 @@ Six labs. Everything runs on your own Linux class machine with your own Claude C
 
 | # | Lab | Time |
 |---|---|---|
-| 1 | [Rule to Control](labs/lab-1-rule-to-control.md) | 30 min |
-| 2 | [Build a Plugin With a Hook](labs/lab-2-build-a-plugin-with-a-hook.md) | 75 min |
-| 3 | [Harden a Sample Repository](labs/lab-3-harden-a-sample-repository.md) | 90 min |
-| 4 | [Prompt Injection Detection](labs/lab-4-prompt-injection-detection.md) | 75 min |
-| 5 | [Credential Audit](labs/lab-5-credential-audit-take-home.md) | take-home |
-| 6 | [Context Engineering](labs/lab-6-context-engineering-take-home.md) | take-home |
+| 1 | [Rule to Control](labs/lab-1-rule-to-control.md) | Day 1 30 min |
+| 2 | [Build a Plugin With a Hook](labs/lab-2-build-a-plugin-with-a-hook.md) | Day 1 75 min |
+| 3 | [Harden a Sample Repository](labs/lab-3-harden-a-sample-repository.md) | Day 2 90 min |
+| 4 | [Prompt Injection Detection](labs/lab-4-prompt-injection-detection.md) | Day 2 75 min |
+| 5 | [Credential Audit](labs/lab-5-credential-audit-take-home.md) | Day 2 take-home or in-class |
+| 6 | [Context Engineering](labs/lab-6-context-engineering-take-home.md) | Day 2 take-home or in-class |
 
 Start with [`SETUP.md`](SETUP.md).
