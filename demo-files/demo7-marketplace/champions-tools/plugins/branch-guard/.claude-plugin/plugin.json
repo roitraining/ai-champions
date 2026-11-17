@@ -1,0 +1,8 @@
+{
+  "name": "branch-guard",
+  "version": "0.1.0",
+  "description": "Blocks force pushes and pushes to main, and adds a branch status command.",
+  "author": {
+    "name": "ROI Training class example"
+  }
+}

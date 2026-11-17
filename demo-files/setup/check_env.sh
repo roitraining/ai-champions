@@ -51,7 +51,7 @@ else
   if [ "$aa_prof" = "clear" ]; then
     warn "  the profile alone is NOT enough - in this state commands run UNSANDBOXED"
   fi
-  warn "  Labs 2, 3 and 4 need it. Switch both with:"
+  warn "  Labs 2, 3 and 4 and Demos 3 and 9 need it. Switch both with:"
   warn "    bash \$FILES/setup/classroom-sandbox.sh --on     (and --off afterwards)"
   warn "  Read Lab 3 Step 1 first: it is machine-wide, so it is a decision, not a fix."
 fi

@@ -1,0 +1,14 @@
+{
+  "name": "champions-tools",
+  "description": "Example team marketplace for the AI Champions class",
+  "owner": {
+    "name": "ROI Training class example"
+  },
+  "plugins": [
+    {
+      "name": "branch-guard",
+      "source": "./plugins/branch-guard",
+      "description": "Blocks force pushes and pushes to the main branch, and adds a read-only branch status command"
+    }
+  ]
+}

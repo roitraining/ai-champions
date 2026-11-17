@@ -22,7 +22,7 @@ What the labs need:
 | Linux with `bash` | all labs |
 | Python 3.11 or later | every scoring script |
 | `git` 2.31 or later | Labs 1, 2 and 6 |
-| `jq` | the logging work in Lab 1 |
+| `jq` | the logging work in Lab 1 and Demo 6 |
 | `bubblewrap` and `socat` | Lab 3's sandbox, and Lab 4's sandbox configuration |
 | `claude`, signed in | Labs 2, 3 and 4 |
 

@@ -1,0 +1,9 @@
+{
+  "model": "sonnet",
+  "permissions": {
+    "deny": [
+      "Bash(git push *)",
+      "Read(./.env)"
+    ]
+  }
+}

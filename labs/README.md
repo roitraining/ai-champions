@@ -1,7 +1,7 @@
 # AI Champions Training: Claude Code for Engineering Teams. Labs
 
 **Course:** AI Champions Training: Claude Code for Engineering Teams (Governance, Hooks, Plugins, and Secure Environments), two days, ROI Training
-**Contents:** Four timed hands-on labs and two take-home labs. The numbers and titles match the Today's Labs slide.
+**Contents:** Four timed hands-on labs and two take-home labs.
 
 ---
 
@@ -29,4 +29,8 @@ Claude Code can word things differently each time. Check your result against the
 - **[Lab 4: Prompt Injection Detection](lab-4-prompt-injection-detection.md)**
 - **[Lab 5: Credential Audit (take-home)](lab-5-credential-audit-take-home.md)**
 - **[Lab 6: Context Engineering (take-home)](lab-6-context-engineering-take-home.md)**
+
+---
+
+**Related:** the [demos guide](../demos/README.md) holds the 10 demos for this course.
 
