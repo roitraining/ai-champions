@@ -4,6 +4,19 @@ About 10 minutes. You need a Linux machine, a terminal, and your own Claude Code
 sign-in. Nothing in this course needs an organization, an administrator console, or a
 shared account.
 
+> **On a class machine, this takes about 3 minutes.** Claude Code is normally already
+> installed, so skip section 2. Do this, in order:
+>
+> 1. **Get the course files** (the next section): clone the repo and set `$FILES`.
+> 2. **Section 1**: run `check_env.sh`. It should exit clean, with nothing to install.
+> 3. **Section 3**: run `claude` and sign in with your own seat. The login in any other
+>    app on the machine does not carry over, so confirm with `claude auth status`.
+> 4. **Section 4**: run `echo $ANTHROPIC_API_KEY`. It should print nothing.
+> 5. Start Lab 1.
+>
+> If `check_env.sh` reports something missing, or `claude --version` prints nothing, read
+> that section in full. The rest of this page is for your own machine.
+
 ---
 
 ## Get the course files
