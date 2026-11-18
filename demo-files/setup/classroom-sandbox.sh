@@ -111,7 +111,7 @@ report() {
     echo "[ OK ] Nothing is blocking the sandbox - both controls are clear."
     echo "       Confirm it for real inside a session: ask Claude to run 'touch ~/sandbox-probe'."
     echo "       It should fail with 'Read-only file system'. If it succeeds, you are NOT sandboxed."
-    echo "       Put the machine back with: bash $0 --off"
+    echo "       Nothing to switch on. Leave the machine as it is: run --off only if YOU ran --on."
   fi
 }
 

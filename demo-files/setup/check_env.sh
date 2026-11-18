@@ -46,13 +46,14 @@ fi
 if [ "$aa_prof" = "clear" ] && [ "$aa_sysctl" != "1" ]; then
   ok "sandbox: profile clear, sysctl $aa_sysctl - nothing is blocking it"
   warn "  verify for real: in a session, 'touch ~/sandbox-probe' must FAIL"
+  warn "  you do not need classroom-sandbox.sh --on here, and --off would undo this"
 else
   warn "sandbox: profile $aa_prof, apparmor_restrict_unprivileged_userns $aa_sysctl"
   if [ "$aa_prof" = "clear" ]; then
     warn "  the profile alone is NOT enough - in this state commands run UNSANDBOXED"
   fi
   warn "  Labs 2, 3 and 4 and Demos 3 and 9 need it. Switch both with:"
-  warn "    bash \$FILES/setup/classroom-sandbox.sh --on     (and --off afterwards)"
+  warn "    bash \$FILES/setup/classroom-sandbox.sh --on     (and --off afterwards, only if you ran --on)"
   warn "  Read Lab 3 Step 1 first: it is machine-wide, so it is a decision, not a fix."
 fi
 

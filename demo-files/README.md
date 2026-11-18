@@ -9,7 +9,7 @@ Run `bash setup/check_env.sh` first. It checks Python, `jq`, `git`, `claude`, `b
 | Folder or file | Used by | What it holds |
 |---|---|---|
 | `setup/check_env.sh` | all labs | Linux environment check (reads only) |
-| `setup/classroom-sandbox.sh` | Labs 2, 3 and 4, Demos 3 and 9 | Checks, switches on and switches off the machine's sandbox setting. Read Lab 3 Step 1 before you run `--on` |
+| `setup/classroom-sandbox.sh` | Labs 2, 3 and 4, Demos 3 and 9 | Checks, switches on and switches off the machine's sandbox setting. Run `--check` first: on some machines nothing needs switching on. Read Lab 3 Step 1 before you run `--on` |
 | `templates/intake-checklist.md` | Demo 1 | Generic ten-section intake checklist (a team replaces it with its own) |
 | `templates/risk-tiers.md` | Demo 1 | Generic three-tier example |
 | `templates/mcp-server-review.md` | Demo 5 | Checklist for reviewing an MCP server before adding it |

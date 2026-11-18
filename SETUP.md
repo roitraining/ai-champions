@@ -6,6 +6,17 @@ shared account.
 
 ---
 
+## Get the course files
+
+```bash
+git clone https://github.com/roitraining/ai-champions.git ~/champions
+export FILES=~/champions/demo-files
+echo 'export FILES=~/champions/demo-files' >> ~/.bashrc
+```
+
+`$FILES` in every lab and demo means the `demo-files` folder. The `export` sets it for this
+terminal and the line added to `~/.bashrc` sets it for every new terminal you open.
+
 ## 1. Run the environment check first
 
 ```bash

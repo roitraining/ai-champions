@@ -14,7 +14,7 @@
 
 **Steps:**
 
-1. Run `bash $FILES/setup/check_env.sh`. Read the `bubblewrap` and `socat` lines and the sandbox line. **On Ubuntu 24.04 and later the sandbox line says the profile is blocking. Fix that first:** run `bash $FILES/setup/classroom-sandbox.sh --check`, then `--on` (it needs sudo and is machine-wide), then `--check` again. Both controls must read clear (profile clear, sysctl 0). Run `--off` when you finish.
+1. Run `bash $FILES/setup/check_env.sh`. Read the `bubblewrap` and `socat` lines and the sandbox line. **On Ubuntu 24.04 and later the sandbox line says the profile is blocking. Fix that first:** run `bash $FILES/setup/classroom-sandbox.sh --check`, then `--on` (it needs sudo and is machine-wide), then `--check` again. Both controls must read clear (profile clear, sysctl 0). Run `--off` when you finish, but only if you ran `--on`. If the first `--check` already reads clear, skip `--on` and `--off`.
 2. Sandbox off: `cd $FILES/demo9-sandbox && bash apply.sh off`, then `cd project && claude`. Ask: `Run bash probe.sh`. Probes 1, 2 and 3 report SUCCEEDED, and probe 4 gets a response.
 3. Sandbox on: exit, run `bash ../apply.sh on`, and restart `claude`. Open `/sandbox` to show the panel. Ask for the probe again. Probes 1, 2 and 3 report BLOCKED. Probe 4 (an allowed domain) still gets a response. If a command fails with `apply-seccomp: ... Permission denied`, the sandbox never started: go back to step 1.
 4. Learn the one-line check you will use on any machine: ask Claude to run `touch ~/sandbox-probe`. With the sandbox working it fails with "Read-only file system".

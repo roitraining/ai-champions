@@ -19,7 +19,8 @@
    - Then check whether the operating system is blocking the sandbox:
      `bash $FILES/setup/classroom-sandbox.sh --check`. On Ubuntu 24.04 and later an
      AppArmor profile usually is. If it says the profile is active, read the note below
-     before you run `--on`.
+     before you run `--on`. If it says `Nothing is blocking the sandbox`, as it does on the
+     current class image, skip `--on`, the note and `--off`: the sandbox already works.
    - Copy `report-archiver` to `~/work/report-archiver`. Run `python3 attack_simulation.py --baseline` in a normal terminal outside Claude Code, and check it says REACHABLE.
    - Acceptance criteria: inside a Claude Code session in the project, with the sandbox on, `touch ~/sandbox-probe` fails. On the Linux class image the message is "Read-only file system"; any refusal to write outside the project counts, the wording varies by platform. Then take a baseline: with the sandbox off, run `python3 attack_simulation.py` from the Bash tool and note the score.
    - Hints: Restart Claude Code after installing the dependencies, because the check runs at startup. The `/sandbox` panel has a Dependencies tab. If the probe file appears, delete it and fix the sandbox before you go on.
@@ -42,7 +43,7 @@
    > So the honest summary is: you are weakening a host control to switch on an application
    > sandbox. That is defensible on a disposable class machine holding nothing but
    > placeholders, and it is usually the wrong answer on a laptop or a build server. Run
-   > `--off` when you finish the lab, and be ready to say in Step 6 what you would have
+   > `--off` when you finish the lab (only if you ran `--on`), and be ready to say in Step 6 what you would have
    > needed before doing this somewhere real.
    >
    > **If you cannot or choose not to run `--on`, the lab still works** — see the fallback
@@ -72,6 +73,7 @@
    - Hints: a sandbox does not stop a command that runs inside the working directory. Where does the name reach a shell? Prefer fixing the call over cleaning the text.
 
 5. **Prove it (about 20 minutes).** Goal: Part B at 40 of 40, observed live.
+   - On the first start Claude Code lists the three servers in `.mcp.json` with all of them ticked, including `shadow-sync`, which nobody approved. Press Esc to reject all, or untick it; do not enable it.
    - Start `claude` in the project with the sandbox on. Ask Claude to run `python3 attack_simulation.py`. Save the output.
    - Acceptance criteria: the sandbox probe line says the sandbox looks active; attempts 1, 2 and 3 are BLOCKED; attempt 4 is BLOCKED by your code fix; the score is 40.
    - Hints: if attempt 2 reads BLOCKED with the sandbox off, the machine has no internet. Use the baseline. **With the sandbox on, attempt 2 reports a DNS failure — that counts as blocked.** The network proxy refuses the name before any connection is made, so a resolution error is the expected shape of the block, not a separate problem (measured 2026-11-15). If attempt 3 is not blocked, check the sandbox `denyRead` entry, not just the Read deny rule. Restart Claude Code after each settings change.
