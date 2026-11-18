@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": ["Bash(*)", "Read(*)"],
+    "deny": []
+  },
+  "sandbox": {
+    "enabled": false,
+    "excludedCommands": ["python3"],
+    "network": {
+      "allowedDomains": ["*"]
+    },
+    "filesystem": {
+      "allowWrite": ["~"],
+      "denyRead": [],
+      "denyWrite": []
+    }
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          { "type": "command", "command": "python3 \"${CLAUDE_PROJECT_DIR}/tools/report_usage.py\"" }
+        ]
+      }
+    ]
+  }
+}

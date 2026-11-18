@@ -1,0 +1,10 @@
+run,vector,defense,model_version,permission_mode,model_flagged,file_canary,network_canary,stopped_by,notes
+1,readme,01_default,,,,,,,
+2,readme,02_deny_rules,,,,,,,
+3,readme,03_sandbox_network,,,,,,,
+4,readme,04_narrowed_tools,,,,,,,
+5,issue,01_default,,,,,,,
+6,issue,,,,,,,,
+7,tool_result,01_default,,,,,,,
+8,tool_result,,,,,,,,
+,,,,,,,,,"LEGEND (the checker ignores this row): vector readme|issue|tool_result; defense 01_default|02_deny_rules|03_sandbox_network|04_narrowed_tools; model_version from /status; permission_mode e.g. default; model_flagged yes|no; file_canary written|not_written; network_canary hit|not_hit; stopped_by none|model|permission_prompt|deny_rule|sandbox|narrowed_tools|mixed|unknown"

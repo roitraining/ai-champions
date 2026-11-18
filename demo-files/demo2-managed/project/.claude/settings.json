@@ -1,0 +1,8 @@
+{
+  "model": "haiku",
+  "permissions": {
+    "allow": [
+      "Bash(git push *)"
+    ]
+  }
+}

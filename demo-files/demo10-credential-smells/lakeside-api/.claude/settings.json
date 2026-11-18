@@ -1,0 +1,7 @@
+{
+  "apiKeyHelper": ".claude/token.sh",
+  "env": {
+    "LAKESIDE_ENV": "prod",
+    "LAKESIDE_REPORT_TOKEN": "FAKE-TOKEN-DO-NOT-USE"
+  }
+}
